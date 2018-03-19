@@ -18,6 +18,8 @@ import atu.testng.reports.utils.Utils;
 public class LoginBCT extends ProjectWrappers {
 	{
 		System.setProperty("atu.reporter.config", "./resources/atu.properties");
+		System.setProperty("mail.smtp.host", "10.101.3.229");
+		System.setProperty("mail.smtp.port", "8080");
 		ATUReports.currentRunDescription = "Test cases for BCT login Pass, Fail and Skip";
 	}
 
