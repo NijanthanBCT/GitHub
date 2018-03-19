@@ -1,0 +1,9 @@
+05/12/2017 16:56:12 devpinoyLogger The browser : 'chrome' has been launched successfully
+05/12/2017 16:56:14 devpinoyLogger The URL : 'https://bctprodapps.bahwancybertek.com' has been opened
+05/12/2017 16:56:14 devpinoyLogger Implicitly wait has been set to 30 Secs
+05/12/2017 16:56:19 devpinoyLogger Title verified and its matching with the given text : Login
+05/12/2017 16:56:20 devpinoyLogger The data : 'nj112282' has been entered by locator: 'id' successfully
+05/12/2017 16:56:20 devpinoyLogger The data : 'Kalaiselvi@123' has been entered by locator: 'id' successfully
+05/12/2017 16:56:21 devpinoyLogger The element has been clicked by locator: 'id' successfully
+05/12/2017 16:56:22 devpinoyLogger Title verified and its not matching with the given text : Welcome to BCT Intranet
+05/12/2017 16:56:23 devpinoyLogger All the active browsers has been closed

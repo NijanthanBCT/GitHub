@@ -1,0 +1,10 @@
+12/03/2018 12:36:05 devpinoyLogger The browser : 'chrome' has been launched successfully
+12/03/2018 12:36:07 devpinoyLogger The URL : 'http://192.168.16.75:9081/eTender/login?session' has been opened
+12/03/2018 12:36:07 devpinoyLogger Implicitly wait has been set to 30 Secs
+12/03/2018 12:36:13 devpinoyLogger The data : 'Bahwan57' has been entered by locator: 'id' successfully
+12/03/2018 12:36:14 devpinoyLogger The data : '57' has been entered by locator: 'id' successfully
+12/03/2018 12:36:15 devpinoyLogger The data : '577367' has been entered by locator: 'id' successfully
+12/03/2018 12:36:16 devpinoyLogger The element has been clicked by locator: 'xpath' successfully
+12/03/2018 12:36:17 devpinoyLogger The element has been clicked by locator: 'xpath' successfully
+12/03/2018 12:36:18 devpinoyLogger The element has been clicked by locator: 'xpath' successfully
+12/03/2018 12:36:24 devpinoyLogger All the active browsers has been closed

@@ -1,0 +1,7 @@
+15/03/2018 12:49:02 devpinoyLogger The browser : 'chrome' has been launched successfully
+15/03/2018 12:49:06 devpinoyLogger The URL : 'http://intranet.bahwancybertek.com/index.php' has been opened
+15/03/2018 12:49:06 devpinoyLogger Implicitly wait has been set to 30 Secs
+15/03/2018 12:49:12 devpinoyLogger The data : 'nj112282' has been entered by locator: 'id' successfully
+15/03/2018 12:49:12 devpinoyLogger The data : 'Kalaiselvi@123' has been entered by locator: 'id' successfully
+15/03/2018 12:49:15 devpinoyLogger The element has been clicked by locator: 'xpath' successfully
+15/03/2018 12:49:16 devpinoyLogger All the active browsers has been closed

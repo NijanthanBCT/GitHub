@@ -1,0 +1,18 @@
+15/03/2018 16:39:23 devpinoyLogger The browser : 'chrome' has been launched successfully
+15/03/2018 16:39:27 devpinoyLogger The URL : 'http://intranet.bahwancybertek.com/index.php' has been opened
+15/03/2018 16:39:27 devpinoyLogger Implicitly wait has been set to 30 Secs
+15/03/2018 16:39:33 devpinoyLogger The data : 'nj112282' has been entered by locator: 'id' successfully
+15/03/2018 16:39:34 devpinoyLogger Unable to enter data : 'NijuRaji@2728' in the field by locator: 'id', value :'null'
+15/03/2018 16:39:35 devpinoyLogger All the active browsers has been closed
+15/03/2018 16:39:37 devpinoyLogger The browser : 'chrome' has been launched successfully
+15/03/2018 16:39:41 devpinoyLogger The URL : 'http://intranet.bahwancybertek.com/index.php' has been opened
+15/03/2018 16:39:41 devpinoyLogger Implicitly wait has been set to 30 Secs
+15/03/2018 16:39:47 devpinoyLogger The data : 'nj112282' has been entered by locator: 'id' successfully
+15/03/2018 16:39:48 devpinoyLogger The data : 'NijuRaji@2728' has been entered by locator: 'id' successfully
+15/03/2018 16:39:56 devpinoyLogger The element has been clicked by locator: 'xpath' successfully
+15/03/2018 16:40:12 devpinoyLogger The element has been clicked by locator: 'xpath' successfully
+15/03/2018 16:40:14 devpinoyLogger Switched to last window
+15/03/2018 16:40:19 devpinoyLogger Current browser closed
+15/03/2018 16:40:19 devpinoyLogger Unable to switch to parent window
+15/03/2018 16:40:19 devpinoyLogger Unable to take ScreenShot
+15/03/2018 16:40:20 devpinoyLogger All the active browsers has been closed

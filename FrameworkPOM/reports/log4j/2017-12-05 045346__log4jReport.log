@@ -1,0 +1,8 @@
+05/12/2017 16:53:50 devpinoyLogger The browser : 'chrome' has been launched successfully
+05/12/2017 16:53:52 devpinoyLogger The URL : 'https://bctprodapps.bahwancybertek.com' has been opened
+05/12/2017 16:53:52 devpinoyLogger Implicitly wait has been set to 30 Secs
+05/12/2017 16:53:57 devpinoyLogger Title verified and its matching with the given text : Login
+05/12/2017 16:53:58 devpinoyLogger The data : 'nj112282' has been entered by locator: 'id' successfully
+05/12/2017 16:53:58 devpinoyLogger The data : 'Kalaiselvi@123' has been entered by locator: 'id' successfully
+05/12/2017 16:54:29 devpinoyLogger Unable to click the element by locator: 'classname', value :'SubmitButton'
+05/12/2017 16:54:30 devpinoyLogger All the active browsers has been closed

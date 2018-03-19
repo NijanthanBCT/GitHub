@@ -1,0 +1,9 @@
+05/12/2017 17:27:09 devpinoyLogger The browser : 'chrome' has been launched successfully
+05/12/2017 17:27:10 devpinoyLogger The URL : 'https://bctprodapps.bahwancybertek.com' has been opened
+05/12/2017 17:27:10 devpinoyLogger Implicitly wait has been set to 30 Secs
+05/12/2017 17:27:15 devpinoyLogger Title verified and its matching with the given text : Login
+05/12/2017 17:27:16 devpinoyLogger The data : '112282.0' has been entered by locator: 'id' successfully
+05/12/2017 17:27:16 devpinoyLogger The data : '' has been entered by locator: 'id' successfully
+05/12/2017 17:27:18 devpinoyLogger The element has been clicked by locator: 'id' successfully
+05/12/2017 17:27:48 devpinoyLogger Unable to click the element by locator: 'linkText', value :'Employee Timecard Entry, BCT India'
+05/12/2017 17:27:49 devpinoyLogger All the active browsers has been closed

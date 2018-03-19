@@ -1,0 +1,16 @@
+19/09/2017 00:42:15 devpinoyLogger The browser : 'chrome' has been launched successfully
+19/09/2017 00:42:24 devpinoyLogger The URL : 'http://intranet.bahwancybertek.com/intranet/index.php/home' has been opened
+19/09/2017 00:42:24 devpinoyLogger Implicitly wait has been set to 30 Secs
+19/09/2017 00:42:24 devpinoyLogger Title verified and its matching with the given text : Login
+19/09/2017 00:42:24 devpinoyLogger The data : 'nj112237' has been entered by locator: 'id' successfully
+19/09/2017 00:42:25 devpinoyLogger The data : 'Pawanism@123' has been entered by locator: 'id' successfully
+19/09/2017 00:42:34 devpinoyLogger The element has been clicked by locator: 'classname' successfully
+19/09/2017 00:42:35 devpinoyLogger Title verified and its matching with the given text : Welcome to BCT Intranet
+19/09/2017 00:42:35 devpinoyLogger The retrieved text is : Hi Nijanthan Jagadeesan,
+19/09/2017 00:42:43 devpinoyLogger The element has been clicked by locator: 'xpath' successfully
+19/09/2017 00:42:43 devpinoyLogger Title verified and its matching with the given text : Resources
+19/09/2017 00:42:53 devpinoyLogger The element has been clicked by locator: 'xpath' successfully
+19/09/2017 00:42:53 devpinoyLogger Title verified and its matching with the given text : Welcome to BCT Intranet
+19/09/2017 00:43:01 devpinoyLogger The element has been clicked by locator: 'classname' successfully
+19/09/2017 00:43:01 devpinoyLogger Title verified and its matching with the given text : Login
+19/09/2017 00:43:02 devpinoyLogger All the active browsers has been closed
