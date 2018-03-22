@@ -1,0 +1,10 @@
+22/03/2018 18:22:46 devpinoyLogger The browser : 'android' has been launched successfully
+22/03/2018 18:22:58 devpinoyLogger The data : 'c' has been entered by locator: 'id' successfully
+22/03/2018 18:23:00 devpinoyLogger Unable to enter data : 'bctchn' in the field by locator: 'id', value :'null'
+22/03/2018 18:23:03 devpinoyLogger All the active browsers has been closed
+22/03/2018 18:23:25 devpinoyLogger The browser : 'android' has been launched successfully
+22/03/2018 18:23:37 devpinoyLogger The data : 'c' has been entered by locator: 'id' successfully
+22/03/2018 18:23:44 devpinoyLogger The data : 'bctchn' has been entered by locator: 'id' successfully
+22/03/2018 18:23:47 devpinoyLogger The element has been clicked by locator: 'id' successfully
+22/03/2018 18:24:04 devpinoyLogger Text cannot be retrieved from given xpath value
+22/03/2018 18:24:06 devpinoyLogger All the active browsers has been closed
