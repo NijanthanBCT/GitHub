@@ -1,0 +1,14 @@
+22/03/2018 11:21:29 devpinoyLogger The browser : 'chrome' has been launched successfully
+22/03/2018 11:21:33 devpinoyLogger The URL : 'http://192.168.5.142:8180/CueTrack/' has been opened
+22/03/2018 11:21:33 devpinoyLogger Implicitly wait has been set to 30 Secs
+22/03/2018 11:21:39 devpinoyLogger The data : 'nj112282' has been entered by locator: 'id' successfully
+22/03/2018 11:21:40 devpinoyLogger Unable to enter data : 'NijuRaji@2728' in the field by locator: 'id', value :'null'
+22/03/2018 11:21:41 devpinoyLogger All the active browsers has been closed
+22/03/2018 11:21:43 devpinoyLogger The browser : 'chrome' has been launched successfully
+22/03/2018 11:21:48 devpinoyLogger The URL : 'http://192.168.5.142:8180/CueTrack/' has been opened
+22/03/2018 11:21:48 devpinoyLogger Implicitly wait has been set to 30 Secs
+22/03/2018 11:21:53 devpinoyLogger The data : 'nj112282' has been entered by locator: 'id' successfully
+22/03/2018 11:21:54 devpinoyLogger The data : 'NijuRaji@2728' has been entered by locator: 'id' successfully
+22/03/2018 11:21:55 devpinoyLogger The element has been clicked by locator: 'xpath' successfully
+22/03/2018 11:22:11 devpinoyLogger The retrieved text is : Nijanthan Jagadeesan
+22/03/2018 11:22:17 devpinoyLogger All the active browsers has been closed
