@@ -28,7 +28,7 @@ public class LoginBCT extends ProjectWrappers {
 		dataSheetName = "BCT";
 		
 	}
-
+      
 	@Test(dataProvider = "fetchData")
 
 	public void loginPass(String userId, String password) throws InterruptedException {
@@ -39,7 +39,11 @@ public class LoginBCT extends ProjectWrappers {
 
 		new LoginPage(driver, test).enterUserId(userId).enterPassword(password).clickSubmit().getUserName();
 
-	}
+	}   
+	
+	
+	
+	
 
 	@Test(dataProvider = "fetchData")
 	

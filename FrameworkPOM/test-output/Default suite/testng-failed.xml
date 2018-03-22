@@ -15,6 +15,7 @@
           <include name="setSheetName"/>
           <include name="beforeMethod"/>
           <include name="getAllObjects"/>
+          <include name="loginSkip2"/>
           <include name="loginSkip"/>
           <include name="beforeTest"/>
           <include name="afterSuite"/>

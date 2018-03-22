@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="1" ignored="0" total="3" passed="1">
+<testng-results skipped="2" failed="1" ignored="0" total="4" passed="1">
   <reporter-output>
     <line>
       <![CDATA[STEP1]]>
@@ -20,48 +20,48 @@
       <![CDATA[STEP6]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="51339" started-at="2018-03-16T05:46:01Z" finished-at="2018-03-16T05:46:52Z">
+  <suite name="Default suite" duration-ms="52274" started-at="2018-03-22T05:51:25Z" finished-at="2018-03-22T05:52:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="51339" started-at="2018-03-16T05:46:01Z" finished-at="2018-03-16T05:46:52Z">
+    <test name="Default test" duration-ms="52274" started-at="2018-03-22T05:51:25Z" finished-at="2018-03-22T05:52:17Z">
       <class name="com.pom.testcases.LoginBCT">
-        <test-method status="PASS" signature="beforSuite()[pri:0, instance:com.pom.testcases.LoginBCT@971d0d8]" name="beforSuite" is-config="true" duration-ms="791" started-at="2018-03-16T05:46:00Z" finished-at="2018-03-16T05:46:01Z">
+        <test-method status="PASS" signature="beforSuite()[pri:0, instance:com.pom.testcases.LoginBCT@4d826d77]" name="beforSuite" is-config="true" duration-ms="781" started-at="2018-03-22T05:51:24Z" finished-at="2018-03-22T05:51:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforSuite -->
-        <test-method status="PASS" signature="setSheetName()[pri:0, instance:com.pom.testcases.LoginBCT@971d0d8]" name="setSheetName" is-config="true" duration-ms="3" started-at="2018-03-16T05:46:01Z" depends-on-methods="com.pom.wrappers.ProjectWrappers.beforSuite" finished-at="2018-03-16T05:46:01Z">
+        <test-method status="PASS" signature="setSheetName()[pri:0, instance:com.pom.testcases.LoginBCT@4d826d77]" name="setSheetName" is-config="true" duration-ms="3" started-at="2018-03-22T05:51:25Z" depends-on-methods="com.pom.wrappers.ProjectWrappers.beforSuite" finished-at="2018-03-22T05:51:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setSheetName -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.pom.testcases.LoginBCT@971d0d8]" name="beforeTest" is-config="true" duration-ms="5" started-at="2018-03-16T05:46:01Z" finished-at="2018-03-16T05:46:01Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.pom.testcases.LoginBCT@4d826d77]" name="beforeTest" is-config="true" duration-ms="5" started-at="2018-03-22T05:51:25Z" finished-at="2018-03-22T05:51:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="getAllObjects()[pri:0, instance:com.pom.testcases.LoginBCT@971d0d8]" name="getAllObjects" is-config="true" duration-ms="457" started-at="2018-03-16T05:46:01Z" finished-at="2018-03-16T05:46:01Z">
+        <test-method status="PASS" signature="getAllObjects()[pri:0, instance:com.pom.testcases.LoginBCT@4d826d77]" name="getAllObjects" is-config="true" duration-ms="624" started-at="2018-03-22T05:51:25Z" finished-at="2018-03-22T05:51:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getAllObjects -->
-        <test-method status="PASS" signature="getGridConfig()[pri:0, instance:com.pom.testcases.LoginBCT@971d0d8]" name="getGridConfig" is-config="true" duration-ms="47" started-at="2018-03-16T05:46:01Z" finished-at="2018-03-16T05:46:01Z">
+        <test-method status="PASS" signature="getGridConfig()[pri:0, instance:com.pom.testcases.LoginBCT@4d826d77]" name="getGridConfig" is-config="true" duration-ms="77" started-at="2018-03-22T05:51:25Z" finished-at="2018-03-22T05:51:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getGridConfig -->
-        <test-method status="PASS" signature="getMobileConfig()[pri:0, instance:com.pom.testcases.LoginBCT@971d0d8]" name="getMobileConfig" is-config="true" duration-ms="41" started-at="2018-03-16T05:46:01Z" finished-at="2018-03-16T05:46:01Z">
+        <test-method status="PASS" signature="getMobileConfig()[pri:0, instance:com.pom.testcases.LoginBCT@4d826d77]" name="getMobileConfig" is-config="true" duration-ms="57" started-at="2018-03-22T05:51:25Z" finished-at="2018-03-22T05:51:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getMobileConfig -->
-        <test-method status="PASS" signature="setTestData()[pri:0, instance:com.pom.testcases.LoginBCT@971d0d8]" name="setTestData" is-config="true" duration-ms="54" started-at="2018-03-16T05:46:01Z" finished-at="2018-03-16T05:46:02Z">
+        <test-method status="PASS" signature="setTestData()[pri:0, instance:com.pom.testcases.LoginBCT@4d826d77]" name="setTestData" is-config="true" duration-ms="39" started-at="2018-03-22T05:51:26Z" finished-at="2018-03-22T05:51:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setTestData -->
-        <test-method status="PASS" signature="setData()[pri:0, instance:com.pom.testcases.LoginBCT@971d0d8]" name="setData" is-config="true" duration-ms="3" started-at="2018-03-16T05:46:02Z" finished-at="2018-03-16T05:46:02Z">
+        <test-method status="PASS" signature="setData()[pri:0, instance:com.pom.testcases.LoginBCT@4d826d77]" name="setData" is-config="true" duration-ms="2" started-at="2018-03-22T05:51:26Z" finished-at="2018-03-22T05:51:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setData -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.pom.testcases.LoginBCT@971d0d8]" name="beforeMethod" is-config="true" duration-ms="7588" started-at="2018-03-16T05:46:02Z" finished-at="2018-03-16T05:46:09Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.pom.testcases.LoginBCT@4d826d77]" name="beforeMethod" is-config="true" duration-ms="8232" started-at="2018-03-22T05:51:26Z" finished-at="2018-03-22T05:51:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="loginFail(java.lang.String, java.lang.String)[pri:0, instance:com.pom.testcases.LoginBCT@971d0d8]" name="loginFail" duration-ms="6675" started-at="2018-03-16T05:46:09Z" data-provider="fetchData" finished-at="2018-03-16T05:46:16Z">
+        <test-method status="FAIL" signature="loginFail(java.lang.String, java.lang.String)[pri:0, instance:com.pom.testcases.LoginBCT@4d826d77]" name="loginFail" duration-ms="6644" started-at="2018-03-22T05:51:34Z" data-provider="fetchData" finished-at="2018-03-22T05:51:41Z">
           <params>
             <param index="0">
               <value>
@@ -84,7 +84,7 @@ at com.pom.utils.ReporterExtent.reportStep(ReporterExtent.java:51)
 at com.pom.utils.ReporterExtent.reportStep(ReporterExtent.java:22)
 at com.pom.wrappers.GenericWrappers.enter(GenericWrappers.java:1027)
 at com.pom.pages.LoginPage.enterPasswordWrong(LoginPage.java:38)
-at com.pom.testcases.LoginBCT.loginFail(LoginBCT.java:49)
+at com.pom.testcases.LoginBCT.loginFail(LoginBCT.java:52)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -122,15 +122,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- loginFail -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.pom.testcases.LoginBCT@971d0d8]" name="afterMethod" is-config="true" duration-ms="636" started-at="2018-03-16T05:46:16Z" finished-at="2018-03-16T05:46:16Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.pom.testcases.LoginBCT@4d826d77]" name="afterMethod" is-config="true" duration-ms="677" started-at="2018-03-22T05:51:41Z" finished-at="2018-03-22T05:51:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.pom.testcases.LoginBCT@971d0d8]" name="beforeMethod" is-config="true" duration-ms="6836" started-at="2018-03-16T05:46:16Z" finished-at="2018-03-16T05:46:23Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.pom.testcases.LoginBCT@4d826d77]" name="beforeMethod" is-config="true" duration-ms="6938" started-at="2018-03-22T05:51:41Z" finished-at="2018-03-22T05:51:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="loginPass(java.lang.String, java.lang.String)[pri:0, instance:com.pom.testcases.LoginBCT@971d0d8]" name="loginPass" duration-ms="28227" started-at="2018-03-16T05:46:23Z" data-provider="fetchData" finished-at="2018-03-16T05:46:52Z">
+        <test-method status="PASS" signature="loginPass(java.lang.String, java.lang.String)[pri:0, instance:com.pom.testcases.LoginBCT@4d826d77]" name="loginPass" duration-ms="28198" started-at="2018-03-22T05:51:48Z" data-provider="fetchData" finished-at="2018-03-22T05:52:16Z">
           <params>
             <param index="0">
               <value>
@@ -158,17 +158,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- loginPass -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.pom.testcases.LoginBCT@971d0d8]" name="afterMethod" is-config="true" duration-ms="660" started-at="2018-03-16T05:46:52Z" finished-at="2018-03-16T05:46:52Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.pom.testcases.LoginBCT@4d826d77]" name="afterMethod" is-config="true" duration-ms="656" started-at="2018-03-22T05:52:16Z" finished-at="2018-03-22T05:52:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="loginSkip(java.lang.String, java.lang.String)[pri:0, instance:com.pom.testcases.LoginBCT@971d0d8]" name="loginSkip" duration-ms="0" started-at="2018-03-16T05:46:52Z" data-provider="fetchData" depends-on-methods="com.pom.testcases.LoginBCT.loginFail" finished-at="2018-03-16T05:46:52Z">
+        <test-method status="SKIP" signature="loginSkip(java.lang.String, java.lang.String)[pri:0, instance:com.pom.testcases.LoginBCT@4d826d77]" name="loginSkip" duration-ms="0" started-at="2018-03-22T05:52:17Z" data-provider="fetchData" depends-on-methods="com.pom.testcases.LoginBCT.loginFail" finished-at="2018-03-22T05:52:17Z">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method LoginBCT.loginSkip(java.lang.String, java.lang.String)[pri:0, instance:com.pom.testcases.LoginBCT@971d0d8] depends on not successfully finished methods]]>
+              <![CDATA[Method LoginBCT.loginSkip(java.lang.String, java.lang.String)[pri:0, instance:com.pom.testcases.LoginBCT@4d826d77] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method LoginBCT.loginSkip(java.lang.String, java.lang.String)[pri:0, instance:com.pom.testcases.LoginBCT@971d0d8] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method LoginBCT.loginSkip(java.lang.String, java.lang.String)[pri:0, instance:com.pom.testcases.LoginBCT@4d826d77] depends on not successfully finished methods
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -193,11 +193,42 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginSkip -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.pom.testcases.LoginBCT@971d0d8]" name="afterTest" is-config="true" duration-ms="4" started-at="2018-03-16T05:46:52Z" finished-at="2018-03-16T05:46:52Z">
+        <test-method status="SKIP" signature="loginSkip2(java.lang.String, java.lang.String)[pri:0, instance:com.pom.testcases.LoginBCT@4d826d77]" name="loginSkip2" duration-ms="0" started-at="2018-03-22T05:52:17Z" data-provider="fetchData" depends-on-methods="com.pom.testcases.LoginBCT.loginSkip" finished-at="2018-03-22T05:52:17Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method LoginBCT.loginSkip2(java.lang.String, java.lang.String)[pri:0, instance:com.pom.testcases.LoginBCT@4d826d77] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method LoginBCT.loginSkip2(java.lang.String, java.lang.String)[pri:0, instance:com.pom.testcases.LoginBCT@4d826d77] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSkip2 -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.pom.testcases.LoginBCT@4d826d77]" name="afterTest" is-config="true" duration-ms="4" started-at="2018-03-22T05:52:17Z" finished-at="2018-03-22T05:52:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.pom.testcases.LoginBCT@971d0d8]" name="afterSuite" is-config="true" duration-ms="389" started-at="2018-03-16T05:46:52Z" finished-at="2018-03-16T05:46:53Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.pom.testcases.LoginBCT@4d826d77]" name="afterSuite" is-config="true" duration-ms="585" started-at="2018-03-22T05:52:17Z" finished-at="2018-03-22T05:52:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

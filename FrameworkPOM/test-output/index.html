@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\nj112237\AppData\Local\Temp\testng-eclipse-388273980\testng-customsuite.xml</span>
+                    <span>C:\Users\nj112237\AppData\Local\Temp\testng-eclipse--275023769\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,  1 skipped,  1 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,  2 skipped,  1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -117,6 +117,11 @@
                       <span>
                         <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.pom.testcases.LoginBCT" hash-for-method="loginSkip">loginSkip</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.pom.testcases.LoginBCT" hash-for-method="loginSkip2">loginSkip2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Default_suite -->
@@ -162,7 +167,7 @@
 	at com.pom.utils.ReporterExtent.reportStep(ReporterExtent.java:22)
 	at com.pom.wrappers.GenericWrappers.enter(GenericWrappers.java:1027)
 	at com.pom.pages.LoginPage.enterPasswordWrong(LoginPage.java:38)
-	at com.pom.testcases.LoginBCT.loginFail(LoginBCT.java:49)
+	at com.pom.testcases.LoginBCT.loginFail(LoginBCT.java:52)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -205,7 +210,35 @@
                   <a name="loginSkip">
                   </a> <!-- loginSkip -->
                   <span class="method-name">loginSkip</span>
-                  <div class="stack-trace">java.lang.Throwable: Method LoginBCT.loginSkip(java.lang.String, java.lang.String)[pri:0, instance:com.pom.testcases.LoginBCT@971d0d8] depends on not successfully finished methods
+                  <div class="stack-trace">java.lang.Throwable: Method LoginBCT.loginSkip(java.lang.String, java.lang.String)[pri:0, instance:com.pom.testcases.LoginBCT@4d826d77] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginSkip2">
+                  </a> <!-- loginSkip2 -->
+                  <span class="method-name">loginSkip2</span>
+                  <div class="stack-trace">java.lang.Throwable: Method LoginBCT.loginSkip2(java.lang.String, java.lang.String)[pri:0, instance:com.pom.testcases.LoginBCT@4d826d77] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -249,7 +282,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\nj112237\AppData\Local\Temp\testng-eclipse-388273980\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\nj112237\AppData\Local\Temp\testng-eclipse--275023769\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -298,19 +331,23 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginPass')
 data.setCell(0, 2, 'com.pom.testcases.LoginBCT')
-data.setCell(0, 3, 28227);
+data.setCell(0, 3, 28198);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'loginFail')
 data.setCell(1, 2, 'com.pom.testcases.LoginBCT')
-data.setCell(1, 3, 6675);
+data.setCell(1, 3, 6644);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginSkip')
+data.setCell(2, 1, 'loginSkip2')
 data.setCell(2, 2, 'com.pom.testcases.LoginBCT')
 data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'loginSkip')
+data.setCell(3, 2, 'com.pom.testcases.LoginBCT')
+data.setCell(3, 3, 0);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -364,65 +401,65 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-suite before">
                 <span class="method-name">setSheetName</span>
-                <span class="method-start">791 ms</span>
+                <span class="method-start">781 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">796 ms</span>
+                <span class="method-start">786 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
                 <span class="method-name">getAllObjects</span>
-                <span class="method-start">801 ms</span>
+                <span class="method-start">791 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
                 <span class="method-name">getGridConfig</span>
-                <span class="method-start">1258 ms</span>
+                <span class="method-start">1415 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
                 <span class="method-name">getMobileConfig</span>
-                <span class="method-start">1305 ms</span>
+                <span class="method-start">1492 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
                 <span class="method-name">setTestData</span>
-                <span class="method-start">1346 ms</span>
+                <span class="method-start">1549 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">setData</span>
-                <span class="method-start">1406 ms</span>
+                <span class="method-start">1594 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">1447 ms</span>
+                <span class="method-start">1638 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">loginFail(nj112282, NijuRaji@2728)</span>
-                <span class="method-start">9035 ms</span>
+                <span class="method-start">9870 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">15713 ms</span>
+                <span class="method-start">16517 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">16391 ms</span>
+                <span class="method-start">17239 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginPass(nj112282, NijuRaji@2728)</span>
-                <span class="method-start">23227 ms</span>
+                <span class="method-start">24177 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">51456 ms</span>
+                <span class="method-start">52377 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">52129 ms</span>
+                <span class="method-start">53054 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">52163 ms</span>
+                <span class="method-start">53096 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
