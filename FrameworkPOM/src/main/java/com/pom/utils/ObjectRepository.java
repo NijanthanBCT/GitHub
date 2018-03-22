@@ -18,7 +18,7 @@ public class ObjectRepository {
 		try {
 			FileInputStream fis = new FileInputStream("./data/" + sheetName + ".xlsx");
 			XSSFWorkbook wBook = new XSSFWorkbook(fis);
-			XSSFSheet wSheet = wBook.getSheet("ObjectRepository");
+			XSSFSheet wSheet = wBook.getSheet("MobileRepository");
 			int rowCount = wSheet.getLastRowNum() + 1;
 			int colCount = wSheet.getRow(0).getLastCellNum() ;
 			data = new String[rowCount][colCount];

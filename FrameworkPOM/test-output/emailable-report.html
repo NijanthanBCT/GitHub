@@ -9,16 +9,16 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num attn">2</td><td class="num attn">1</td><td class="num">52,274</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">104,086</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.pom.testcases.LoginBCT</td><td><a href="#m0">loginFail</a></td><td rowspan="1">1521697894362</td><td rowspan="1">6644</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">com.pom.testcases.LoginBCT</td><td><a href="#m1">loginSkip</a></td><td rowspan="1">1521697937527</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">loginSkip2</a></td><td rowspan="1">1521697937538</td><td rowspan="1">0</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.pom.testcases.LoginBCT</td><td><a href="#m3">loginPass</a></td><td rowspan="1">1521697908669</td><td rowspan="1">28198</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.pom.testcases.CholaOpen</td><td><a href="#m0">loginFail</a></td><td rowspan="1">1521723366065</td><td rowspan="1">12858</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.pom.testcases.CholaOpen</td><td><a href="#m1">loginPass</a></td><td rowspan="1">1521723403491</td><td rowspan="1">36655</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.pom.testcases.LoginBCT#loginFail</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>nj112282</td><td>NijuRaji@2728</td></tr><tr><th colspan="2">Messages</th></tr><tr><td colspan="2"><div class="messages">STEP1<br/>STEP2</div></td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.RuntimeException: Failed
+<h2>Default test</h2><h3 id="m0">com.pom.testcases.CholaOpen#loginFail</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>c</td><td>bctchn</td></tr><tr><th colspan="2">Messages</th></tr><tr><td colspan="2"><div class="messages">STEP1<br/>STEP2</div></td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.RuntimeException: Failed
 	at com.pom.utils.ReporterExtent.reportStep(ReporterExtent.java:51)
 	at com.pom.utils.ReporterExtent.reportStep(ReporterExtent.java:22)
 	at com.pom.wrappers.GenericWrappers.enter(GenericWrappers.java:1027)
 	at com.pom.pages.LoginPage.enterPasswordWrong(LoginPage.java:38)
-	at com.pom.testcases.LoginBCT.loginFail(LoginBCT.java:52)
+	at com.pom.testcases.CholaOpen.loginFail(CholaOpen.java:50)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -45,46 +45,6 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.pom.testcases.LoginBCT#loginSkip</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method LoginBCT.loginSkip(java.lang.String, java.lang.String)[pri:0, instance:com.pom.testcases.LoginBCT@4d826d77] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.pom.testcases.LoginBCT#loginSkip2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method LoginBCT.loginSkip2(java.lang.String, java.lang.String)[pri:0, instance:com.pom.testcases.LoginBCT@4d826d77] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.pom.testcases.LoginBCT#loginPass</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>nj112282</td><td>NijuRaji@2728</td></tr><tr><th colspan="2">Messages</th></tr><tr><td colspan="2"><div class="messages">STEP3<br/>STEP4<br/>STEP5<br/>STEP6</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.pom.testcases.CholaOpen#loginPass</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>c</td><td>bctchn</td></tr><tr><th colspan="2">Messages</th></tr><tr><td colspan="2"><div class="messages">STEP3<br/>STEP4<br/>STEP5</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
