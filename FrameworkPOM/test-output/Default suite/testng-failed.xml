@@ -5,6 +5,7 @@
     <classes>
       <class name="com.pom.testcases.CholaOpen">
         <methods>
+          <include name="loginSkip"/>
           <include name="setData"/>
           <include name="beforSuite"/>
           <include name="setSheetName"/>
@@ -12,8 +13,8 @@
           <include name="afterMethod"/>
           <include name="setTestData"/>
           <include name="afterTest"/>
+          <include name="zgetAllObjects"/>
           <include name="beforeMethod"/>
-          <include name="getAllObjects"/>
           <include name="beforeTest"/>
           <include name="loginFail" invocation-numbers="0"/>
           <include name="afterSuite"/>

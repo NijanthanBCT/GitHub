@@ -9,16 +9,23 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ObjectRepository {
 
-
-	public static String[][] getAllObjects(String sheetName) throws IOException {
+	public static String[][] getAllObjects(String sheetName , String browserName) throws IOException {
 		String[][] data = null;
 		int i, j;
 		String cellValue = "";
+		XSSFSheet wSheet;
 
 		try {
 			FileInputStream fis = new FileInputStream("./data/" + sheetName + ".xlsx");
 			XSSFWorkbook wBook = new XSSFWorkbook(fis);
-			XSSFSheet wSheet = wBook.getSheet("MobileRepository");
+			/*if(browserName.equalsIgnoreCase("android"))
+			{*/
+				 wSheet = wBook.getSheet("ObjectRepository");
+			/*}
+			else
+			{
+				 wSheet = wBook.getSheet("WebObjectRepository");
+			}*/
 			int rowCount = wSheet.getLastRowNum() + 1;
 			int colCount = wSheet.getRow(0).getLastCellNum() ;
 			data = new String[rowCount][colCount];

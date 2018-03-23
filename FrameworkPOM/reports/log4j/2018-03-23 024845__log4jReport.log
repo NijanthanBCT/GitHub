@@ -1,0 +1,8 @@
+23/03/2018 14:50:49 devpinoyLogger The browser : 'android' has been launched successfully
+23/03/2018 14:50:57 devpinoyLogger Unable to enter data : 'c' in the field by locator: 'id', value :'bct.peg.bpms.reliancepoc:id/input_user'
+23/03/2018 14:51:01 devpinoyLogger All the active browsers has been closed
+23/03/2018 14:51:24 devpinoyLogger The browser : 'android' has been launched successfully
+23/03/2018 14:51:36 devpinoyLogger The data : 'c' has been entered by locator: 'id' successfully
+23/03/2018 14:51:45 devpinoyLogger The data : 'bctchn' has been entered by locator: 'id' successfully
+23/03/2018 14:51:48 devpinoyLogger The element has been clicked by locator: 'id' successfully
+23/03/2018 14:52:08 devpinoyLogger All the active browsers has been closed

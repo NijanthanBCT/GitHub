@@ -1,20 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
+  <test thread-count="5" name="Test(failed)" parallel="classes">
     <classes>
-      <class name="com.pom.testcases.TC001_Login">
+      <class name="com.pom.testcases.CholaOpen">
         <methods>
-          <include name="beforeMethod"/>
-          <include name="login"/>
-          <include name="beforSuite"/>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-          <include name="afterSuite"/>
+          <include name="loginSkip"/>
           <include name="setData"/>
+          <include name="beforSuite"/>
+          <include name="setSheetName"/>
+          <include name="getGridConfig"/>
+          <include name="afterMethod"/>
+          <include name="setTestData"/>
           <include name="afterTest"/>
+          <include name="zgetAllObjects"/>
+          <include name="beforeMethod"/>
+          <include name="loginPass" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+          <include name="loginFail" invocation-numbers="0"/>
+          <include name="afterSuite"/>
+          <include name="getMobileConfig"/>
         </methods>
-      </class> <!-- com.pom.testcases.TC001_Login -->
+      </class> <!-- com.pom.testcases.CholaOpen -->
+      <class name="com.pom.testcases.LoginBCT">
+        <methods>
+          <include name="setData"/>
+          <include name="loginFail" invocation-numbers="0"/>
+          <include name="beforSuite"/>
+          <include name="getGridConfig"/>
+          <include name="afterMethod"/>
+          <include name="loginPass" invocation-numbers="0"/>
+          <include name="setTestData"/>
+          <include name="afterTest"/>
+          <include name="setSheetName"/>
+          <include name="zgetAllObjects"/>
+          <include name="beforeMethod"/>
+          <include name="loginSkip2"/>
+          <include name="loginSkip"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+          <include name="getMobileConfig"/>
+        </methods>
+      </class> <!-- com.pom.testcases.LoginBCT -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -25,6 +25,8 @@ public class CholaOpen extends ProjectWrappers {
 	@BeforeSuite
 	public void setSheetName() {
 		dataSheetName = "Chola";
+		
+		
 	}
 
 	@Test(dataProvider = "fetchData")

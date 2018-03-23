@@ -134,8 +134,8 @@ public class ProjectWrappers extends GenericWrappers {
 	}
 
 	@BeforeTest
-	public void getAllObjects() throws IOException {
-		String[][] data = ObjectRepository.getAllObjects(dataSheetName);
+	public void zgetAllObjects() throws IOException {
+		String[][] data = ObjectRepository.getAllObjects(dataSheetName, browserName);
 
 		String key = "";
 		String value = "";
