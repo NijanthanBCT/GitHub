@@ -12,6 +12,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Properties;
 
+import org.apache.log4j.PropertyConfigurator;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
@@ -51,9 +52,9 @@ public class ProjectWrappers extends GenericWrappers {
 		
 		
 
-/*		File log4jfile = new File("./src/main/resources/LicenseLog4j.properties");
+		File log4jfile = new File("./src/main/resources/LicenseLog4j.properties");
 		PropertyConfigurator.configure(log4jfile.getAbsolutePath());
-*///		String propertyFileName = System.getProperty("user.dir")
+//		String propertyFileName = System.getProperty("user.dir")
 //				+ "//resources//config//MasterConfiguration.properties";
 //		configPropertyMap = new PropertyUtils().getMap(propertyFileName);
 		Calendar cal = Calendar.getInstance();
@@ -244,14 +245,14 @@ public class ProjectWrappers extends GenericWrappers {
 
 	@AfterSuite
 	public void afterSuite() {
-		/*try
+	/*	try
 		{
 		MailUtils.sendEmailWithAttachment(prop.getProperty("HostName"), prop.getProperty("PortName"), prop.getProperty("SMPTauth"), prop.getProperty("UserName"), prop.getProperty("PassWord"), prop.getProperty("FromAddress"), prop.getProperty("ToAddress"), prop.getProperty("Subject"), prop.getProperty("pdfFileName"));
 		}catch (Exception e) {
 			System.out.println("Unable to send mail...");
 			e.printStackTrace();
-		}
-		*/
+		}*/
+		
 		endResult();
 
 	}
