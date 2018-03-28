@@ -41,6 +41,7 @@ public class AUT {
 		ATUReports.indexPageDescription = "My Project Description";
 	}
 
+	@SuppressWarnings("deprecation")
 	@Test
 	public void deprecatedLogsTest() {
 		Reporter.log("<a href=\"#\">My Logs using TestNG Reporter</a>");
@@ -89,6 +90,7 @@ public class AUT {
 				ScreenshotOf.DESKTOP));
 	}
 
+	@SuppressWarnings("deprecation")
 	@Test(dataProvider = "data")
 	public void dodo(String a, String b) throws InterruptedException {
 		ATUReports
@@ -102,6 +104,7 @@ public class AUT {
 		}
 	}
 
+	@SuppressWarnings("deprecation")
 	@Test
 	public void VerifyLogin_failure() throws InterruptedException {
 		ATUReports.setAuthorInfo("SampleAuthor3", "12-Nov-2013 3:46", "1.2");
@@ -110,6 +113,7 @@ public class AUT {
 		Assert.fail("I have thrown Exception");
 	}
 
+	@SuppressWarnings("deprecation")
 	@Test(dependsOnMethods = "VerifyLogin_failure")
 	public void VerifySkipping() throws InterruptedException {
 		ATUReports.setAuthorInfo("SampleAuthor3", "12-Nov-2013 3:46", "1.2");

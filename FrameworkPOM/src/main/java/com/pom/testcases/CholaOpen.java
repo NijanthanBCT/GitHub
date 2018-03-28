@@ -1,5 +1,6 @@
 package com.pom.testcases;
 
+import org.testng.ITestResult;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -13,6 +14,7 @@ import atu.testng.reports.listeners.ATUReportsListener;
 import atu.testng.reports.listeners.ConfigurationListener;
 import atu.testng.reports.listeners.MethodListener;
 import atu.testng.reports.utils.Utils;
+import atu.testng.reports.writers.TestCaseReportsPageWriter;
 
 @Listeners({ ATUReportsListener.class, ConfigurationListener.class, MethodListener.class })
 
@@ -22,9 +24,12 @@ public class CholaOpen extends ProjectWrappers {
 		ATUReports.currentRunDescription = "Test cases for ROC login Pass, Fail and Skip";
 	}
 
+	
+	
 	@BeforeSuite
 	public void setSheetName() {
 		dataSheetName = "Chola";
+		
 		
 		
 	}
@@ -37,7 +42,7 @@ public class CholaOpen extends ProjectWrappers {
 		ATUReports.setWebDriver(driver);
 		ATUReports.setTestCaseReqCoverage("Test case for ROC Login pass");
 
-		new LoginPageChola(driver, test).enterUserId(userId).enterPassword(password).clickSubmit();
+		new LoginPageChola(driver, test).enterUserId(userId).enterPassword(password).clickSubmit().verifyHeader();
 
 	}
 

@@ -1,6 +1,5 @@
 package com.pom.utils;
 
-import com.pom.wrappers.*;
 import java.awt.Color;
 import java.io.File;
 import java.io.FileInputStream;
@@ -8,11 +7,10 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.text.DecimalFormat;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.util.HashMap;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
+
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -23,8 +21,6 @@ import org.apache.pdfbox.pdmodel.edit.PDPageContentStream;
 import org.apache.pdfbox.pdmodel.font.PDType1Font;
 import org.apache.pdfbox.pdmodel.graphics.xobject.PDJpeg;
 import org.apache.pdfbox.pdmodel.graphics.xobject.PDXObjectImage;
-import org.apache.tools.ant.types.TimeComparison;
-import org.apache.tools.ant.types.selectors.DateSelector.TimeComparisons;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartUtilities;
 import org.jfree.chart.JFreeChart;
@@ -33,9 +29,11 @@ import org.jfree.chart.labels.StandardPieSectionLabelGenerator;
 import org.jfree.chart.plot.PiePlot;
 import org.jfree.data.general.DefaultPieDataset;
 
-import com.pom.utils.*;
-
-public class PDFReporter {
+public class PDFReporter extends TestResultCount {
+	
+	
+	
+	
 	// Hold the report font size.
 	@SuppressWarnings("unused")
 	private final static float FONT_SIZE = 7f;
@@ -55,18 +53,22 @@ public class PDFReporter {
 		PieRenderer renderer;
 		PiePlot plot;
 		DefaultPieDataset dataset;
+		//JFreeChartEntity url = null;
+		
 
 		// Specify the colors here
-		Color[] colors = { new Color(70, 130, 180), new Color(205, 92, 92), new Color(50, 205, 50) };
+		Color[] colors = { new  Color( 0 , 255 , 0 ) , new Color( 255 , 0 , 0 ), new Color( 0 , 0 , 255 ) };
 
 		// Defining the dataset
 		dataset = new DefaultPieDataset();
-		dataset.setValue("Pass", contents[0]);
-		dataset.setValue("Fail", contents[1]);
-		dataset.setValue("Skip", contents[2]);
+		dataset.setValue("Passed", contents[0]);
+		dataset.setValue("Failed", contents[1]);
+		dataset.setValue("Skiped", contents[2]);
+		//url.setURLText("file:///D:/GitHub/FrameworkPOM/reports/ATU%20Reports/index.html");
 		// chart without header in it
-		chart = ChartFactory.createPieChart3D("", dataset, true, true, false);
+		chart = ChartFactory.createPieChart3D("Test Execution Results Chart", dataset, true, true, false);
 		plot = (PiePlot) chart.getPlot();
+		
 		// setting custom colors
 		renderer = new PieRenderer(colors);
 		renderer.setColor(plot, dataset);
@@ -184,7 +186,7 @@ public class PDFReporter {
 
 			contentStream.close();
 
-			File pdfFile = new File(pdfLocation + "/TestResultsReport.pdf");
+			File pdfFile = new File(pdfLocation + "/"+prop.getProperty("pdfFileName"));
 
 			if (pdfFile.exists()) {
 				pdfFile.delete();
@@ -227,14 +229,15 @@ public class PDFReporter {
 			contentStream.beginText();
 			contentStream.setFont(PDType1Font.HELVETICA_BOLD, 10);
 			contentStream.moveTextPositionByAmount(100, 80);
-			String propertyFileName = "./resources/MasterConfiguration.properties";
-			HashMap<String, String> configPropertyMap = new PropertyUtils().getMap(propertyFileName);
-			String reportUrl = "http:/192.168.7.191";
+			//String propertyFileName = "./resources/MasterConfiguration.properties";
+			//HashMap<String, String> configPropertyMap = new PropertyUtils().getMap(propertyFileName);
+			String reportUrl = "http:/192.168.7.191:8080";
 			if (reportUrl.equals("")) {
 				LOGGER.info("Problem getting jenkins url. Please check jenkins admin");
 				reportUrl = "Problem getting jenkins url. Please check jenkins admin";
 			}
 			// String newLine = System.getProperty("line.separator");
+			
 			contentStream.drawString(reportUrl);
 			contentStream.endText();
 			String note1 = "Note: In case if you experience any difficulties in accessing the Detailed Report, ";
@@ -413,31 +416,38 @@ public class PDFReporter {
 		}
 	}
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void createPDFReport() throws InterruptedException {
 		File log4jfile = new File("./src/main/resources/log4j.properties");
 		PropertyConfigurator.configure(log4jfile.getAbsolutePath());
-		int tcount = 2;
+	/*	int tcount = 2;
 		int passed = 1;
 		int failed = 1;
 		int skiped = 0;
-		LocalTime startTime = LocalTime.now();
-		String exeStart = LocalDate.now().toString() +"  " + LocalTime.now().toString();
-		Thread.sleep(3421);
-		LocalTime endTime = LocalTime.now();
-		String exeEnd = LocalDate.now().toString() +"  " + LocalTime.now().toString();
-	//	String exeTime = exeEnd - exeStart;
+		*/
+		
+		totalCount = totalTests.size();
+		passedCount = passedTests.size();
+		failedCount = failedTests.size();
+		skippedCount = skippedTests.size();
+
+		
+		
+		System.out.println("Counts : " + totalCount + " , " + passedCount + " , "  + failedCount  + " , " + skippedCount);
+	
+		
+		System.out.println("Failed Count inside PDF : " + prop.getProperty("FailedTestCount"));
 		
 		String[][] executionSummaryArray = {
 
-				{ "Test Scenarios Executed:", "2" }, { "Passed:", "1" }, { "Failed:", "1" }, { "Skipped:", "0" },
-				{ "Execution Start Time", exeStart }, { "Execution End Time",exeEnd},
-				/*{ "Total Execution Time", TimeComparisons.compare(startTime, endTime) }*/ };
+				{ "Test Scenarios Executed:", ""+totalCount  }, { "Passed:", ""+passedCount }, { "Failed:", ""+failedCount }, { "Skipped:", ""+skippedCount },
+				{ "Execution Start Time", prop.getProperty("StartTime") }, { "Execution End Time", prop.getProperty("EndTime") },
+				{ "Total Execution Time", prop.getProperty("ExecutionTime") } };
 
-		String[][] executionOverviewArray = { { "Date:", LocalDateTime.now().toString() }, { "Release:", "Test" },
-				{ "Type of Testing:", "Smoke" }, { "Automation Type:", "Web Application" }, { "Application Name:", "BCT" },
-				{ "Environment:", "Testing" } };
+		String[][] executionOverviewArray = { { "Date:", new SimpleDateFormat("dd-MMM-yyyy HH:mm:ss").format(new Date()) }, { "Release:", prop.getProperty("Release") },
+				{ "Type of Testing:", prop.getProperty("Category") }, { "Automation Type:", prop.getProperty("AutomationType") }, { "Application Name:", prop.getProperty("ApplicationName") },
+				{ "Environment:", prop.getProperty("Environment") } };
 
-		int[] params = { 50, 50, 0 };
+		int[] params = { ( passedCount  * 100  / totalCount ) , ( failedCount * 100 / totalCount )  , ( skippedCount * 100 / totalCount )  };
 
 		PDFReporter executionSummary = new PDFReporter();
 

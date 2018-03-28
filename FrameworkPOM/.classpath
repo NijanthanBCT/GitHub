@@ -29,6 +29,8 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
-	<classpathentry kind="lib" path="D:/GitHub/FrameworkPOM/libs/ATUReporter_Selenium_testNG_5.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/nj112237/Desktop/ATUReporter_Selenium_testNG_5.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/nj112237/Downloads/org.restlet.ext.json-2.3-M2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/nj112237/Downloads/org.restlet-2.3-M2.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

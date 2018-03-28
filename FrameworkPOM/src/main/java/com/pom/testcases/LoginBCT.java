@@ -13,7 +13,7 @@ import atu.testng.reports.listeners.ConfigurationListener;
 import atu.testng.reports.listeners.MethodListener;
 import atu.testng.reports.utils.Utils;
 
-@Listeners({ ATUReportsListener.class, ConfigurationListener.class, MethodListener.class })
+@Listeners({ ATUReportsListener.class, ConfigurationListener.class, MethodListener.class , com.pom.utils.TestResultCount.class })
 
 public class LoginBCT extends ProjectWrappers {
 	{
@@ -22,6 +22,8 @@ public class LoginBCT extends ProjectWrappers {
 		System.setProperty("mail.smtp.port", "8080");*/
 		ATUReports.currentRunDescription = "Test cases for BCT login Pass, Fail and Skip";
 	}
+	
+	
 
 	@BeforeSuite
 	public void setSheetName() {
@@ -36,8 +38,12 @@ public class LoginBCT extends ProjectWrappers {
 		ATUReports.setAuthorInfo(prop.getProperty("Authors"), Utils.getCurrentTime(), "1.0");
 		ATUReports.setWebDriver(driver);
 		ATUReports.setTestCaseReqCoverage("Test case for BCT Login pass");
-
+		
+		
 		new LoginPage(driver, test).enterUserId(userId).enterPassword(password).clickSubmit().getUserName();
+		
+		//Thread.sleep(30000);
+		
 
 	}   
 	
@@ -55,7 +61,7 @@ public class LoginBCT extends ProjectWrappers {
 
 	}
 
-	@Test(dataProvider = "fetchData", dependsOnMethods = "loginFail")
+	/*@Test(dataProvider = "fetchData", dependsOnMethods = "loginFail")
 	
 	public void loginSkip(String userId, String password) throws InterruptedException {
 
@@ -78,5 +84,5 @@ public class LoginBCT extends ProjectWrappers {
 
 		new LoginPage(driver, test).enterUserId(userId).enterPasswordWrong(password).clickSubmit();
 
-	}
+	}*/
 }

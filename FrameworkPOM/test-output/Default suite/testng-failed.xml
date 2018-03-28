@@ -3,24 +3,24 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.pom.testcases.CholaOpen">
+      <class name="com.pom.testcases.LoginBCT">
         <methods>
-          <include name="loginSkip"/>
           <include name="setData"/>
+          <include name="loginFail" invocation-numbers="0"/>
           <include name="beforSuite"/>
-          <include name="setSheetName"/>
           <include name="getGridConfig"/>
           <include name="afterMethod"/>
           <include name="setTestData"/>
           <include name="afterTest"/>
+          <include name="setSheetName"/>
           <include name="zgetAllObjects"/>
           <include name="beforeMethod"/>
+          <include name="getMailConfig"/>
           <include name="beforeTest"/>
-          <include name="loginFail" invocation-numbers="0"/>
           <include name="afterSuite"/>
           <include name="getMobileConfig"/>
         </methods>
-      </class> <!-- com.pom.testcases.CholaOpen -->
+      </class> <!-- com.pom.testcases.LoginBCT -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

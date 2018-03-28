@@ -141,14 +141,14 @@ public class GenericWrappers extends ReporterExtent implements Wrapper {
 			 {
 				 loggerDebug("The given browser : '" + browser + "' cannot be launched... Please specify a proper browser...");
 			 }
-		/*	driver.manage().window().maximize();
+			driver.manage().window().maximize();
 			driver.get(prop.getProperty("URL"));
 			loggerDebug("The URL : '" + prop.getProperty("URL") + "' has been opened");
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			loggerDebug("Implicitly wait has been set to 30 Secs");
 			parWindow = driver.getWindowHandle();
 			reportStep("The browser : " + browser + " has been invoked and URL : " + prop.getProperty("URL") + " has been opened ",
-					"PASS");*/
+					"PASS");
 		} catch (Exception e) {
 			loggerError("The browser : '" + browser + "' cannot be opened");
 			reportStep("The browser: " + browser + " cannot be invoked", "FAIL");
@@ -1003,7 +1003,7 @@ public class GenericWrappers extends ReporterExtent implements Wrapper {
 		// TODO Auto-generated method stub
 		try {
 			if (locator.equalsIgnoreCase("id")) {
-				driver.findElement(By.id(value)).clear();
+				//driver.findElement(By.id(value)).clear();
 				driver.findElement(By.id(value)).sendKeys(data);
 			} else if (locator.equalsIgnoreCase("xpath")) {
 				driver.findElement(By.xpath(value)).clear();
