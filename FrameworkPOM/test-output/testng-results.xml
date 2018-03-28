@@ -20,52 +20,52 @@
       <![CDATA[STEP6]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="55165" started-at="2018-03-28T10:57:55Z" finished-at="2018-03-28T10:58:51Z">
+  <suite name="Default suite" duration-ms="52375" started-at="2018-03-28T11:44:14Z" finished-at="2018-03-28T11:45:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="55165" started-at="2018-03-28T10:57:55Z" finished-at="2018-03-28T10:58:51Z">
+    <test name="Default test" duration-ms="52375" started-at="2018-03-28T11:44:14Z" finished-at="2018-03-28T11:45:07Z">
       <class name="com.pom.testcases.LoginBCT">
-        <test-method status="PASS" signature="beforSuite()[pri:0, instance:com.pom.testcases.LoginBCT@5d47c63f]" name="beforSuite" is-config="true" duration-ms="589" started-at="2018-03-28T10:57:55Z" finished-at="2018-03-28T10:57:55Z">
+        <test-method status="PASS" signature="beforSuite()[pri:0, instance:com.pom.testcases.LoginBCT@5d47c63f]" name="beforSuite" is-config="true" duration-ms="649" started-at="2018-03-28T11:44:14Z" finished-at="2018-03-28T11:44:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforSuite -->
-        <test-method status="PASS" signature="setSheetName()[pri:0, instance:com.pom.testcases.LoginBCT@5d47c63f]" name="setSheetName" is-config="true" duration-ms="6" started-at="2018-03-28T10:57:55Z" depends-on-methods="com.pom.wrappers.ProjectWrappers.beforSuite" finished-at="2018-03-28T10:57:55Z">
+        <test-method status="PASS" signature="setSheetName()[pri:0, instance:com.pom.testcases.LoginBCT@5d47c63f]" name="setSheetName" is-config="true" duration-ms="3" started-at="2018-03-28T11:44:14Z" depends-on-methods="com.pom.wrappers.ProjectWrappers.beforSuite" finished-at="2018-03-28T11:44:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setSheetName -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.pom.testcases.LoginBCT@5d47c63f]" name="beforeTest" is-config="true" duration-ms="5" started-at="2018-03-28T10:57:55Z" finished-at="2018-03-28T10:57:55Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.pom.testcases.LoginBCT@5d47c63f]" name="beforeTest" is-config="true" duration-ms="10" started-at="2018-03-28T11:44:14Z" finished-at="2018-03-28T11:44:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="getGridConfig()[pri:0, instance:com.pom.testcases.LoginBCT@5d47c63f]" name="getGridConfig" is-config="true" duration-ms="458" started-at="2018-03-28T10:57:55Z" finished-at="2018-03-28T10:57:56Z">
+        <test-method status="PASS" signature="getGridConfig()[pri:0, instance:com.pom.testcases.LoginBCT@5d47c63f]" name="getGridConfig" is-config="true" duration-ms="483" started-at="2018-03-28T11:44:14Z" finished-at="2018-03-28T11:44:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getGridConfig -->
-        <test-method status="PASS" signature="getMailConfig()[pri:0, instance:com.pom.testcases.LoginBCT@5d47c63f]" name="getMailConfig" is-config="true" duration-ms="53" started-at="2018-03-28T10:57:56Z" finished-at="2018-03-28T10:57:56Z">
+        <test-method status="PASS" signature="getMailConfig()[pri:0, instance:com.pom.testcases.LoginBCT@5d47c63f]" name="getMailConfig" is-config="true" duration-ms="64" started-at="2018-03-28T11:44:15Z" finished-at="2018-03-28T11:44:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getMailConfig -->
-        <test-method status="PASS" signature="getMobileConfig()[pri:0, instance:com.pom.testcases.LoginBCT@5d47c63f]" name="getMobileConfig" is-config="true" duration-ms="48" started-at="2018-03-28T10:57:56Z" finished-at="2018-03-28T10:57:56Z">
+        <test-method status="PASS" signature="getMobileConfig()[pri:0, instance:com.pom.testcases.LoginBCT@5d47c63f]" name="getMobileConfig" is-config="true" duration-ms="81" started-at="2018-03-28T11:44:15Z" finished-at="2018-03-28T11:44:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getMobileConfig -->
-        <test-method status="PASS" signature="setTestData()[pri:0, instance:com.pom.testcases.LoginBCT@5d47c63f]" name="setTestData" is-config="true" duration-ms="41" started-at="2018-03-28T10:57:56Z" finished-at="2018-03-28T10:57:56Z">
+        <test-method status="PASS" signature="setTestData()[pri:0, instance:com.pom.testcases.LoginBCT@5d47c63f]" name="setTestData" is-config="true" duration-ms="43" started-at="2018-03-28T11:44:15Z" finished-at="2018-03-28T11:44:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setTestData -->
-        <test-method status="PASS" signature="zgetAllObjects()[pri:0, instance:com.pom.testcases.LoginBCT@5d47c63f]" name="zgetAllObjects" is-config="true" duration-ms="43" started-at="2018-03-28T10:57:56Z" finished-at="2018-03-28T10:57:56Z">
+        <test-method status="PASS" signature="zgetAllObjects()[pri:0, instance:com.pom.testcases.LoginBCT@5d47c63f]" name="zgetAllObjects" is-config="true" duration-ms="49" started-at="2018-03-28T11:44:15Z" finished-at="2018-03-28T11:44:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- zgetAllObjects -->
-        <test-method status="PASS" signature="setData()[pri:0, instance:com.pom.testcases.LoginBCT@5d47c63f]" name="setData" is-config="true" duration-ms="3" started-at="2018-03-28T10:57:56Z" finished-at="2018-03-28T10:57:56Z">
+        <test-method status="PASS" signature="setData()[pri:0, instance:com.pom.testcases.LoginBCT@5d47c63f]" name="setData" is-config="true" duration-ms="3" started-at="2018-03-28T11:44:15Z" finished-at="2018-03-28T11:44:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setData -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.pom.testcases.LoginBCT@5d47c63f]" name="beforeMethod" is-config="true" duration-ms="10557" started-at="2018-03-28T10:57:56Z" finished-at="2018-03-28T10:58:07Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.pom.testcases.LoginBCT@5d47c63f]" name="beforeMethod" is-config="true" duration-ms="7624" started-at="2018-03-28T11:44:15Z" finished-at="2018-03-28T11:44:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="loginFail(java.lang.String, java.lang.String)[pri:0, instance:com.pom.testcases.LoginBCT@5d47c63f]" name="loginFail" duration-ms="6631" started-at="2018-03-28T10:58:07Z" data-provider="fetchData" finished-at="2018-03-28T10:58:13Z">
+        <test-method status="FAIL" signature="loginFail(java.lang.String, java.lang.String)[pri:0, instance:com.pom.testcases.LoginBCT@5d47c63f]" name="loginFail" duration-ms="6651" started-at="2018-03-28T11:44:23Z" data-provider="fetchData" finished-at="2018-03-28T11:44:29Z">
           <params>
             <param index="0">
               <value>
@@ -126,15 +126,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- loginFail -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.pom.testcases.LoginBCT@5d47c63f]" name="afterMethod" is-config="true" duration-ms="628" started-at="2018-03-28T10:58:13Z" finished-at="2018-03-28T10:58:14Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.pom.testcases.LoginBCT@5d47c63f]" name="afterMethod" is-config="true" duration-ms="657" started-at="2018-03-28T11:44:29Z" finished-at="2018-03-28T11:44:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.pom.testcases.LoginBCT@5d47c63f]" name="beforeMethod" is-config="true" duration-ms="6909" started-at="2018-03-28T10:58:14Z" finished-at="2018-03-28T10:58:21Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.pom.testcases.LoginBCT@5d47c63f]" name="beforeMethod" is-config="true" duration-ms="6964" started-at="2018-03-28T11:44:30Z" finished-at="2018-03-28T11:44:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="loginPass(java.lang.String, java.lang.String)[pri:0, instance:com.pom.testcases.LoginBCT@5d47c63f]" name="loginPass" duration-ms="28221" started-at="2018-03-28T10:58:21Z" data-provider="fetchData" finished-at="2018-03-28T10:58:49Z">
+        <test-method status="PASS" signature="loginPass(java.lang.String, java.lang.String)[pri:0, instance:com.pom.testcases.LoginBCT@5d47c63f]" name="loginPass" duration-ms="28222" started-at="2018-03-28T11:44:37Z" data-provider="fetchData" finished-at="2018-03-28T11:45:05Z">
           <params>
             <param index="0">
               <value>
@@ -162,15 +162,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- loginPass -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.pom.testcases.LoginBCT@5d47c63f]" name="afterMethod" is-config="true" duration-ms="645" started-at="2018-03-28T10:58:49Z" finished-at="2018-03-28T10:58:50Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.pom.testcases.LoginBCT@5d47c63f]" name="afterMethod" is-config="true" duration-ms="633" started-at="2018-03-28T11:45:05Z" finished-at="2018-03-28T11:45:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.pom.testcases.LoginBCT@5d47c63f]" name="afterTest" is-config="true" duration-ms="821" started-at="2018-03-28T10:58:50Z" finished-at="2018-03-28T10:58:51Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.pom.testcases.LoginBCT@5d47c63f]" name="afterTest" is-config="true" duration-ms="796" started-at="2018-03-28T11:45:06Z" finished-at="2018-03-28T11:45:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.pom.testcases.LoginBCT@5d47c63f]" name="afterSuite" is-config="true" duration-ms="263" started-at="2018-03-28T10:58:51Z" finished-at="2018-03-28T10:58:51Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.pom.testcases.LoginBCT@5d47c63f]" name="afterSuite" is-config="true" duration-ms="307" started-at="2018-03-28T11:45:07Z" finished-at="2018-03-28T11:45:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

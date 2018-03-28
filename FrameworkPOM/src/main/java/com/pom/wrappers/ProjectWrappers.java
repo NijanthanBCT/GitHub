@@ -244,14 +244,14 @@ public class ProjectWrappers extends GenericWrappers {
 
 	@AfterSuite
 	public void afterSuite() {
-		try
+		/*try
 		{
 		MailUtils.sendEmailWithAttachment(prop.getProperty("HostName"), prop.getProperty("PortName"), prop.getProperty("SMPTauth"), prop.getProperty("UserName"), prop.getProperty("PassWord"), prop.getProperty("FromAddress"), prop.getProperty("ToAddress"), prop.getProperty("Subject"), prop.getProperty("pdfFileName"));
 		}catch (Exception e) {
 			System.out.println("Unable to send mail...");
 			e.printStackTrace();
 		}
-		
+		*/
 		endResult();
 
 	}
