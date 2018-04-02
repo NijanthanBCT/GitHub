@@ -236,23 +236,29 @@ public class ProjectWrappers extends GenericWrappers {
 		prop.put("ExecutionTime", String.format( "%02d" , executionHour ) + ":" + String.format( "%02d" , executionMin ) + ":" + String.format( "%02d" , executionSec ) );
 		
 		System.out.println("Failed Count inside Project Wrappers : " + failedTestCount );
-		PDFReporter.createPDFReport();
 		
-		unloadObjects();
+		PDFReporter.createPDFReport();
+		Thread.sleep(10000);
+		
 	}
 	
 
 
 	@AfterSuite
 	public void afterSuite() {
-	/*	try
+		
+		if(prop.getProperty("MailReport").equalsIgnoreCase("yes")) {
+		try
 		{
-		MailUtils.sendEmailWithAttachment(prop.getProperty("HostName"), prop.getProperty("PortName"), prop.getProperty("SMPTauth"), prop.getProperty("UserName"), prop.getProperty("PassWord"), prop.getProperty("FromAddress"), prop.getProperty("ToAddress"), prop.getProperty("Subject"), prop.getProperty("pdfFileName"));
+		MailUtils.sendEmailWithAttachment(prop.getProperty("HostName"), prop.getProperty("PortName"), prop.getProperty("SMPTauth"), prop.getProperty("UserName"), prop.getProperty("PassWord"), prop.getProperty("FromAddress"), prop.getProperty("ToAddress"), prop.getProperty("Subject"), prop.getProperty("AttachmentLocation") , prop.getProperty("AttachmentLocation2"));
 		}catch (Exception e) {
 			System.out.println("Unable to send mail...");
 			e.printStackTrace();
-		}*/
-		
+		}
+		}else if(prop.getProperty("MailReport").equalsIgnoreCase("no")) {
+			loggerInfo("Report not sent through mail as requested...");
+		}
+		unloadObjects();
 		endResult();
 
 	}

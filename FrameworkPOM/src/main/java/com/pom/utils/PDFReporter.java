@@ -28,6 +28,7 @@ import org.jfree.chart.labels.PieSectionLabelGenerator;
 import org.jfree.chart.labels.StandardPieSectionLabelGenerator;
 import org.jfree.chart.plot.PiePlot;
 import org.jfree.data.general.DefaultPieDataset;
+import org.testng.ITestNGMethod;
 
 public class PDFReporter extends TestResultCount {
 	
@@ -35,7 +36,6 @@ public class PDFReporter extends TestResultCount {
 	
 	
 	// Hold the report font size.
-	@SuppressWarnings("unused")
 	private final static float FONT_SIZE = 7f;
 
 	private final static float HEADER_FONT_SIZE = 12f;
@@ -57,7 +57,7 @@ public class PDFReporter extends TestResultCount {
 		
 
 		// Specify the colors here
-		Color[] colors = { new  Color( 0 , 255 , 0 ) , new Color( 255 , 0 , 0 ), new Color( 0 , 0 , 255 ) };
+		Color[] colors = { new  Color( 0 , 150 , 0 ) , new Color( 150 , 0 , 0 ), new Color( 0 , 0 , 150 ) };
 
 		// Defining the dataset
 		dataset = new DefaultPieDataset();
@@ -226,7 +226,7 @@ public class PDFReporter extends TestResultCount {
 
 		try {
 			contentStream.setNonStrokingColor(Color.BLACK);
-			contentStream.beginText();
+			/*contentStream.beginText();
 			contentStream.setFont(PDType1Font.HELVETICA_BOLD, 10);
 			contentStream.moveTextPositionByAmount(100, 80);
 			//String propertyFileName = "./resources/MasterConfiguration.properties";
@@ -238,20 +238,95 @@ public class PDFReporter extends TestResultCount {
 			}
 			// String newLine = System.getProperty("line.separator");
 			
-			contentStream.drawString(reportUrl);
-			contentStream.endText();
-			String note1 = "Note: In case if you experience any difficulties in accessing the Detailed Report, ";
-			String note2 = "please reach out to the QA Manager";
-			contentStream.beginText();
+			//contentStream.drawString(reportUrl);
+			contentStream.endText();*/
+			//String note1 = "Note: In case if you experience any difficulties in accessing the Detailed Report, ";
+			//String note2 = "please reach out to the QA Manager";
+			//String note3 = "Failed Test Cases : ";
+			
+			/*contentStream.beginText();
 			contentStream.setFont(PDType1Font.HELVETICA_BOLD, 8);
-			contentStream.moveTextPositionByAmount(100, 60);
+			contentStream.moveTextPositionByAmount(100, 80);
 			contentStream.drawString(note1);
 			contentStream.endText();
+			
 			contentStream.beginText();
 			contentStream.setFont(PDType1Font.HELVETICA_BOLD, 8);
-			contentStream.moveTextPositionByAmount(100, 50);
+			contentStream.moveTextPositionByAmount(100, 70);
 			contentStream.drawString(note2);
 			contentStream.endText();
+			*/
+			//fillRectangle(contentStream, 100, 30, 460, 10);
+
+			writeToPDF(contentStream, 100, 80, "Failed Tests : ");
+			/*
+			contentStream.beginText();
+			contentStream.setFont(PDType1Font.HELVETICA_BOLD, 10);
+			contentStream.moveTextPositionByAmount(100, 30);
+			contentStream.drawString(note3);
+			contentStream.endText();
+			*/
+			
+			if(!failedTests.isEmpty()) {
+				int sNo = 1 ;
+				int yAxis = 70 ;
+				
+			for( ITestNGMethod eachFailed : failedTests ) {
+			
+				String note4 = eachFailed.getMethodName();
+				
+				contentStream.beginText();
+				contentStream.setFont(PDType1Font.HELVETICA_BOLD, 8);
+				contentStream.moveTextPositionByAmount(100, yAxis);
+				contentStream.drawString(sNo+". "+note4);
+				contentStream.endText();
+				
+				sNo++;
+				yAxis = yAxis-10;
+				
+			}
+			
+			}
+			else if(failedTests.isEmpty()) {
+				int yAxis = 70 ;
+				contentStream.beginText();
+				contentStream.setFont(PDType1Font.HELVETICA_BOLD, 8);
+				contentStream.moveTextPositionByAmount(100, yAxis);
+				contentStream.drawString("N/A");
+				contentStream.endText();
+				
+			}
+			
+			writeToPDF(contentStream, 300, 80, "Skipped Tests : ");
+			if(!skippedTests.isEmpty()) {
+			int sNo = 1 ;
+			int yAxis = 70 ;
+			for( ITestNGMethod eachskiped : skippedTests ) {
+				
+				
+				String note5 = eachskiped.getMethodName();
+				
+				contentStream.beginText();
+				contentStream.setFont(PDType1Font.HELVETICA_BOLD, 8);
+				contentStream.moveTextPositionByAmount(300, yAxis);
+				contentStream.drawString(sNo+". "+note5);
+				contentStream.endText();
+				
+				sNo++;
+				yAxis = yAxis-10;
+				
+			}
+			}else if(skippedTests.isEmpty()) {
+				int yAxis = 70 ;
+				contentStream.beginText();
+				contentStream.setFont(PDType1Font.HELVETICA_BOLD, 8);
+				contentStream.moveTextPositionByAmount(300, yAxis);
+				contentStream.drawString("N/A");
+				contentStream.endText();
+				
+			}
+			
+			
 		} catch (IOException e) {
 			LOGGER.info("Something went wrong in pdf creation. Error might be due to: " + e.getMessage());
 		}
@@ -299,9 +374,9 @@ public class PDFReporter extends TestResultCount {
 
 	private void addTestExecutionOverview(PDPageContentStream contentStream, PDDocument doc, PDPage page,
 			String[][] executionOverviewArray) {
-		// fillRectangle(contentStream, 100, 720, 460, 20);
+		 fillRectangle(contentStream, 100, 720, 460, 20);
 
-		// writeToPDF(contentStream, 100, 730, "Execution Report");
+		 writeToPDF(contentStream, 100, 730, "Execution Report");
 
 		headerTable(page, contentStream, 700, 100, executionOverviewArray);
 	}

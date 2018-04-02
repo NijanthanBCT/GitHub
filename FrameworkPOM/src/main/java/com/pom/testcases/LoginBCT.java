@@ -61,7 +61,7 @@ public class LoginBCT extends ProjectWrappers {
 
 	}
 
-	/*@Test(dataProvider = "fetchData", dependsOnMethods = "loginFail")
+	@Test(dataProvider = "fetchData", dependsOnMethods = "loginFail")
 	
 	public void loginSkip(String userId, String password) throws InterruptedException {
 
@@ -84,5 +84,5 @@ public class LoginBCT extends ProjectWrappers {
 
 		new LoginPage(driver, test).enterUserId(userId).enterPasswordWrong(password).clickSubmit();
 
-	}*/
+	}
 }
