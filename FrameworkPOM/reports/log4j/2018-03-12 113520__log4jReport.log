@@ -1,6 +1,0 @@
-12/03/2018 11:35:24 devpinoyLogger The browser : 'chrome' has been launched successfully
-12/03/2018 11:35:26 devpinoyLogger The URL : 'http://192.168.16.75:9081/eTender/login?session' has been opened
-12/03/2018 11:35:26 devpinoyLogger Implicitly wait has been set to 30 Secs
-12/03/2018 11:35:37 devpinoyLogger Unable to enter data : '112282' in the field by locator: 'id', value :'usernameField'
-12/03/2018 11:35:37 devpinoyLogger Unable to take ScreenShot
-12/03/2018 11:35:38 devpinoyLogger All the active browsers has been closed

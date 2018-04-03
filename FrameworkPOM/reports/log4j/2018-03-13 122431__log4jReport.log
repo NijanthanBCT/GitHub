@@ -1,5 +1,0 @@
-13/03/2018 12:24:36 devpinoyLogger The browser : 'chrome' has been launched successfully
-13/03/2018 12:27:15 devpinoyLogger The URL : 'https://preprod.smarterd.com/login' has been opened
-13/03/2018 12:27:15 devpinoyLogger Implicitly wait has been set to 30 Secs
-13/03/2018 12:27:20 devpinoyLogger Unable to enter data : 'Bahwan57' in the field by locator: 'id', value :'null'
-13/03/2018 12:27:21 devpinoyLogger All the active browsers has been closed

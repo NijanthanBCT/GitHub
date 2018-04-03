@@ -1,0 +1,12 @@
+2018-04-03 10:58:37 INFO  devpinoyLogger:19 - The data : 'nj112282' has been entered by locator: 'id' successfully
+2018-04-03 10:58:38 ERROR devpinoyLogger:35 - Unable to enter data : 'NijuRaji@2728' in the field by locator: 'id', value :'null'
+2018-04-03 10:58:51 INFO  devpinoyLogger:19 - The data : 'nj112282' has been entered by locator: 'id' successfully
+2018-04-03 10:58:52 INFO  devpinoyLogger:19 - The data : 'NijuRaji@2728' has been entered by locator: 'id' successfully
+2018-04-03 10:58:53 INFO  devpinoyLogger:19 - The element has been clicked by locator: 'xpath' successfully
+2018-04-03 10:59:15 INFO  PDFReporter:153 - Started PDF report creation
+2018-04-03 10:59:16 INFO  PDFReporter:225 - PDF file location.\reports\pdfReport
+2018-04-03 10:59:16 INFO  PDFReporter:196 - PDF file locationD:\GitHub\FrameworkPOM\.\reports\pdfReport\TestResultsReport.pdf
+2018-04-03 10:59:26 INFO  MailUtils:89 - Sending Mail
+2018-04-03 10:59:27 INFO  MailUtils:141 - Sending Mail.....
+2018-04-03 10:59:27 INFO  MailUtils:143 - Sent Mail to nijanthan.j@bahwancybertek.com , krishnakumarv@bahwancybertek.com , vijay.palanisamy@bahwancybertek.com from nijanthan.j@bahwancybertek.com
+2018-04-03 10:59:27 WARN  COSDocument:639 - Warning: You did not close a PDF Document

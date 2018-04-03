@@ -1,6 +1,0 @@
-23/01/2018 16:17:29 devpinoyLogger The browser : 'chrome' has been launched successfully
-23/01/2018 16:17:31 devpinoyLogger The URL : 'https://bctprodapps.bahwancybertek.com' has been opened
-23/01/2018 16:17:31 devpinoyLogger Implicitly wait has been set to 30 Secs
-23/01/2018 16:17:34 devpinoyLogger Unable to enter data : 'nj112282' in the field by locator: 'id', value :'username'
-23/01/2018 16:17:34 devpinoyLogger Unable to take ScreenShot
-23/01/2018 16:17:35 devpinoyLogger All the active browsers has been closed

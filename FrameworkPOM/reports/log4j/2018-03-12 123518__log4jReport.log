@@ -1,7 +1,0 @@
-12/03/2018 12:35:22 devpinoyLogger The browser : 'chrome' has been launched successfully
-12/03/2018 12:35:23 devpinoyLogger The URL : 'http://192.168.16.75:9081/eTender/login?session' has been opened
-12/03/2018 12:35:23 devpinoyLogger Implicitly wait has been set to 30 Secs
-12/03/2018 12:35:29 devpinoyLogger The data : 'Bahwan57' has been entered by locator: 'id' successfully
-12/03/2018 12:35:30 devpinoyLogger The data : '57' has been entered by locator: 'id' successfully
-12/03/2018 12:35:31 devpinoyLogger The option : English cannot be selected
-12/03/2018 12:35:33 devpinoyLogger All the active browsers has been closed
