@@ -250,7 +250,7 @@ public class ProjectWrappers extends GenericWrappers {
 		if(prop.getProperty("MailReport").equalsIgnoreCase("yes")) {
 		try
 		{
-		MailUtils.sendEmailWithAttachment(prop.getProperty("HostName"), prop.getProperty("PortName"), prop.getProperty("SMPTauth"), prop.getProperty("UserName"), prop.getProperty("PassWord"), prop.getProperty("FromAddress"), prop.getProperty("ToAddress"), prop.getProperty("Subject"), prop.getProperty("AttachmentLocation") , prop.getProperty("AttachmentLocation2"));
+		MailUtils.sendEmailWithAttachment(prop.getProperty("HostName"), prop.getProperty("PortName"), prop.getProperty("SMPTauth"), prop.getProperty("UserName"), prop.getProperty("PassWord"), prop.getProperty("FromAddress"), prop.getProperty("ToAddress"), prop.getProperty("CcAddress") , prop.getProperty("Subject"), prop.getProperty("MessageText") , prop.getProperty("AttachmentLocation") , prop.getProperty("AttachmentLocation2"));
 		}catch (Exception e) {
 			System.out.println("Unable to send mail...");
 			e.printStackTrace();

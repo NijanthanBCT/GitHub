@@ -3,26 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.pom.testcases.LoginBCT">
+      <class name="com.pom.keyword.RunKeywordScripts">
         <methods>
-          <include name="setData"/>
-          <include name="loginFail" invocation-numbers="0"/>
-          <include name="beforSuite"/>
-          <include name="getGridConfig"/>
-          <include name="afterMethod"/>
-          <include name="setTestData"/>
-          <include name="afterTest"/>
-          <include name="setSheetName"/>
-          <include name="zgetAllObjects"/>
-          <include name="beforeMethod"/>
-          <include name="getMailConfig"/>
-          <include name="loginSkip2"/>
-          <include name="loginSkip"/>
-          <include name="beforeTest"/>
-          <include name="afterSuite"/>
-          <include name="getMobileConfig"/>
+          <include name="runAllTests"/>
         </methods>
-      </class> <!-- com.pom.testcases.LoginBCT -->
+      </class> <!-- com.pom.keyword.RunKeywordScripts -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
