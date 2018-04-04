@@ -27,7 +27,7 @@ public class LoginBCT extends ProjectWrappers {
 
 	@BeforeSuite
 	public void setSheetName() {
-		dataSheetName = "BCT";
+		dataSheetName = "BCT2";
 		
 	}
       

@@ -40,6 +40,7 @@ public class GenericWrappers extends ReporterExtent implements Wrapper {
 
 	public RemoteWebDriver driver;
 	protected static Properties prop;
+	protected static Properties locatorProp;
 	public String sReturn, rUrl, gText, gTitle, alertText, parWindow, rHubUrl, rHubPort, rPlatform, rBrowser, portNumber;
 	public static long snapNumb = 1001;
 
@@ -67,9 +68,11 @@ public class GenericWrappers extends ReporterExtent implements Wrapper {
 
 	public void loadObjects() {
 		prop = new Properties();
+		locatorProp = new Properties();
 		try {
 			prop.load(new FileInputStream(new File("./resources/object.properties")));
 			// loggerInfo("The Objects property file has been loaded successfully");
+			//locatorProp.load(new FileInputStream(new File("./resources/locator.properties")));
 		} catch (FileNotFoundException e) {
 			loggerError("The Objects property file is not found");
 			e.printStackTrace();
@@ -82,6 +85,7 @@ public class GenericWrappers extends ReporterExtent implements Wrapper {
 
 	public void unloadObjects() {
 		prop = null;
+		locatorProp = null;
 	}
 
 	public void invokeApp(String browser) {

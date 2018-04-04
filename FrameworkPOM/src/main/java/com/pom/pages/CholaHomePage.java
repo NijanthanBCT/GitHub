@@ -17,7 +17,7 @@ public class CholaHomePage extends ProjectWrappers {
 		 * reportStep("This is not the BCT Internet Home page", "FAIL"); }
 		 */
 		
-		if(verifyTextByName("LoginSubmit.Id", "Login")){
+		if(verifyTextByName(prop.getProperty("Login.Submit"), "Login")){
 			reportStep("ROC application Launched Successfully", "PASS");
 		}
 		else{
@@ -28,17 +28,17 @@ public class CholaHomePage extends ProjectWrappers {
 
 	public TimeSheetPage openTimeSheet() throws InterruptedException {
 		
-		click("xpath", prop.getProperty("Home.TimeSheet.Xpath"));
+		click(locatorProp.getProperty("Home.TimeSheet"), prop.getProperty("Home.TimeSheet"));
 		switchToLastWindow();
 		return new TimeSheetPage(driver, test);
 	}
 
 	public HomePage getUserName() throws InterruptedException {
-		getTextByXpath(prop.getProperty("Home.UserName.Xpath"));
+		getTextByXpath(prop.getProperty("Home.UserName"));
 		return new HomePage(driver, test);
 	}
 	public LoginPage clickLogout() throws InterruptedException {
-		click("xpath", prop.getProperty("Home.Logout.Xpath"));
+		click(locatorProp.getProperty("Home.Logout"), prop.getProperty("Home.Logout"));
 		return new LoginPage(driver, test);
 	}
 }

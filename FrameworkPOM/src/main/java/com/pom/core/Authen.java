@@ -62,7 +62,7 @@ public class Authen {
     {
         Authen td= new Authen();
 
-        String target="2018/04/03 19:30:00";
+        String target="2018/04/04 19:30:00";
         String hKey="78-E3-B5-C2-9F-1C";
         String encrypted1=td.encrypt(target);
         String encrypted2=td.encrypt(hKey);

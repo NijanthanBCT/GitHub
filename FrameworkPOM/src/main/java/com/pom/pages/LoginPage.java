@@ -19,23 +19,23 @@ public class LoginPage extends ProjectWrappers {
 	}
 
 	public LoginPage enterUserId(String userId) {
-		enter("id",prop.getProperty("Login.UserID.Id"), userId);
+		enter(locatorProp.getProperty("Login.UserID"),prop.getProperty("Login.UserID"), userId);
 		return this;
 	}
 	
 	public LoginPage enterPassword(String password) {
-		enter("id", prop.getProperty("Login.Password.Id"), password);
+		enter(locatorProp.getProperty("Login.Password"), prop.getProperty("Login.Password"), password);
 		return this;
 	}
 	
 	public HomePage clickSubmit() throws InterruptedException {
-		click("xpath", prop.getProperty("Login.Submit.Xpath"));
+		click(locatorProp.getProperty("Login.Submit"), prop.getProperty("Login.Submit"));
 		Thread.sleep(10000);
 		return new HomePage(driver, test);
 	}
 	
 	public LoginPage enterPasswordWrong(String password) {
-		enter("id", prop.getProperty("Login.Password.Xpath"), password);
+		enter(locatorProp.getProperty("Login.Passwor"), prop.getProperty("Login.Password"), password);
 		return this;
 	}
 }

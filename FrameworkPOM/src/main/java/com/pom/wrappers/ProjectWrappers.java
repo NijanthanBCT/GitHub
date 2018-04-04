@@ -42,6 +42,7 @@ public class ProjectWrappers extends GenericWrappers {
 	public String dataSheetName;
 	public long executionEndTime, executionStartTime, executionTime, executionHour, executionMin, executionSec;
 	public HashMap<String, String> map = new HashMap<String, String>();
+	public HashMap<String, String> locatorMap = new HashMap<String, String>();
 	//private static Logger LOGGER = Logger.getLogger(ProjectWrappers.class);
 	@BeforeSuite
 	public void beforSuite() {
@@ -247,7 +248,7 @@ public class ProjectWrappers extends GenericWrappers {
 	@AfterSuite
 	public void afterSuite() {
 		
-		if(prop.getProperty("MailReport").equalsIgnoreCase("yes")) {
+		if(prop.getProperty("MailReport").equalsIgnoreCase("Send Mail")) {
 		try
 		{
 		MailUtils.sendEmailWithAttachment(prop.getProperty("HostName"), prop.getProperty("PortName"), prop.getProperty("SMPTauth"), prop.getProperty("UserName"), prop.getProperty("PassWord"), prop.getProperty("FromAddress"), prop.getProperty("ToAddress"), prop.getProperty("CcAddress") , prop.getProperty("Subject"), prop.getProperty("MessageText") , prop.getProperty("AttachmentLocation") , prop.getProperty("AttachmentLocation2"));
@@ -255,7 +256,7 @@ public class ProjectWrappers extends GenericWrappers {
 			System.out.println("Unable to send mail...");
 			e.printStackTrace();
 		}
-		}else if(prop.getProperty("MailReport").equalsIgnoreCase("no")) {
+		}else if(prop.getProperty("MailReport").equalsIgnoreCase("Don't Send Mail")) {
 			loggerInfo("Report not sent through mail as requested...");
 		}
 		unloadObjects();
@@ -266,6 +267,7 @@ public class ProjectWrappers extends GenericWrappers {
 	@BeforeClass
 	public void setData() {
 		prop.putAll(map);
+		locatorProp.putAll(locatorMap);
 		testCaseName = map.get("testCaseName");
 		testDescription = map.get("testDescription");
 		browserName = map.get("browserName");
@@ -362,7 +364,7 @@ public class ProjectWrappers extends GenericWrappers {
 	}
 
 	@BeforeTest
-	public void zgetAllObjects() throws IOException {
+	public void getAllObjects() throws IOException {
 		String[][] data = ObjectRepository.getAllObjects(dataSheetName, browserName);
 
 		String key = "";
@@ -372,13 +374,39 @@ public class ProjectWrappers extends GenericWrappers {
 
 				if (j == 0) {
 					key = data[i][j];
+					System.out.println("Key inside before test object : " + key);
 
 				} else if (j == 1) {
 					value = data[i][j];
+					System.out.println("Value inside before test objects : " + value);
 
 				}
 			}
 			map.put(key, value);
+		}
+
+	}
+	
+	@BeforeTest
+	public void getAllObjectLocators() throws IOException {
+		String[][] data = ObjectRepository.getAllObjectLocators(dataSheetName, browserName);
+
+		String key = "";
+		String value = "";
+		for (int i = 0; i < data.length; i++) {
+			for (int j = 0; j < 2; j++) {
+
+				if (j == 0) {
+					key = data[i][j];
+					System.out.println("Key inside before test : " + key);
+
+				} else if (j == 1) {
+					value = data[i][j];
+					System.out.println("Value inside before test : " + value);
+
+				}
+			}
+			locatorMap.put(key, value);
 		}
 
 	}
