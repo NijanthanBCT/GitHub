@@ -18,39 +18,26 @@ import atu.testng.reports.utils.Utils;
 public class LoginBCT extends ProjectWrappers {
 	{
 		System.setProperty("atu.reporter.config", "./resources/atu.properties");
-		/*System.setProperty("mail.smtp.host", "10.101.3.229");
-		System.setProperty("mail.smtp.port", "8080");*/
 		ATUReports.currentRunDescription = "Test cases for BCT login Pass, Fail and Skip";
 	}
 	
-	
-
 	@BeforeSuite
 	public void setSheetName() {
 		dataSheetName = "BCT2";
-		
 	}
       
 	@Test(dataProvider = "fetchData")
-
 	public void loginPass(String userId, String password) throws InterruptedException {
 
 		ATUReports.setAuthorInfo(prop.getProperty("Authors"), Utils.getCurrentTime(), "1.0");
 		ATUReports.setWebDriver(driver);
 		ATUReports.setTestCaseReqCoverage("Test case for BCT Login pass");
-		
-		
+
 		new LoginPage(driver, test).enterUserId(userId).enterPassword(password).clickSubmit().getUserName();
 		
-		//Thread.sleep(30000);
-		
-
 	}   
 	
-	//some change
-
 	@Test(dataProvider = "fetchData")
-	
 	public void loginFail(String userId, String password) throws InterruptedException {
 
 		ATUReports.setAuthorInfo(prop.getProperty("Authors"), Utils.getCurrentTime(), "1.0");
@@ -62,7 +49,6 @@ public class LoginBCT extends ProjectWrappers {
 	}
 
 	@Test(dataProvider = "fetchData", dependsOnMethods = "loginFail")
-	
 	public void loginSkip(String userId, String password) throws InterruptedException {
 
 		ATUReports.setAuthorInfo(prop.getProperty("Authors"), Utils.getCurrentTime(), "1.0");
@@ -73,9 +59,7 @@ public class LoginBCT extends ProjectWrappers {
 
 	}
 
-
 	@Test(dataProvider = "fetchData", dependsOnMethods = "loginSkip")
-	
 	public void loginSkip2(String userId, String password) throws InterruptedException {
 
 		ATUReports.setAuthorInfo(prop.getProperty("Authors"), Utils.getCurrentTime(), "1.0");

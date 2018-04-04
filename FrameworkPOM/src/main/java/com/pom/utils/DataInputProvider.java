@@ -7,6 +7,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class DataInputProvider {
 
+	@SuppressWarnings("deprecation")
 	public static String[][] getAllSheetData(String sheetName) {
 
 		String[][] data = null;

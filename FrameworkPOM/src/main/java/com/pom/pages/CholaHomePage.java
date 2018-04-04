@@ -1,6 +1,5 @@
 package com.pom.pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import com.pom.wrappers.ProjectWrappers;

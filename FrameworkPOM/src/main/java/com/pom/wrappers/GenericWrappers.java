@@ -624,6 +624,7 @@ public class GenericWrappers extends ReporterExtent implements Wrapper {
 		return sReturn;
 	}
 
+	@SuppressWarnings("deprecation")
 	public void closeBrowser() {
 		// TODO Auto-generated method stub
 		try {

@@ -13,10 +13,11 @@
           <include name="setTestData"/>
           <include name="afterTest"/>
           <include name="setSheetName"/>
-          <include name="zgetAllObjects"/>
           <include name="beforeMethod"/>
+          <include name="getAllObjects"/>
           <include name="getMailConfig"/>
           <include name="loginSkip2"/>
+          <include name="getAllObjectLocators"/>
           <include name="loginSkip"/>
           <include name="beforeTest"/>
           <include name="afterSuite"/>

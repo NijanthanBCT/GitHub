@@ -1,6 +1,5 @@
 package com.pom.testcases;
 
-import org.testng.ITestResult;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -14,7 +13,6 @@ import atu.testng.reports.listeners.ATUReportsListener;
 import atu.testng.reports.listeners.ConfigurationListener;
 import atu.testng.reports.listeners.MethodListener;
 import atu.testng.reports.utils.Utils;
-import atu.testng.reports.writers.TestCaseReportsPageWriter;
 
 @Listeners({ ATUReportsListener.class, ConfigurationListener.class, MethodListener.class })
 
